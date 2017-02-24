@@ -1,0 +1,24 @@
+﻿<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Comments</th>
+                <th>Users</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="sub in controller.subtopics">
+                <td>{{sub.id}}</td>
+                <td><a ui-sref="comments({id: sub.id})">{{sub.title}}</a></td>
+                <td>{{sub.description}}</td>
+                <td>{{sub.comments}}</td>
+                <td>{{sub.users}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-danger" ui-sref="addsubtopic({id: controller.subtopicid.id})">Add</a>
+    [{{controller.subtopicid.id}}]
+</div>

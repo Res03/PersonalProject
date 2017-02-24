@@ -1,0 +1,18 @@
+﻿<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="com in controller.comments">
+                <td>{{com.id}}</td>
+                <td>{{com.title}}</td>
+                <td>{{com.content}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
